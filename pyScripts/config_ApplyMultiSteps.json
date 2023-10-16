@@ -1,0 +1,34 @@
+{   
+    "COMMENTS": "all directories - file or folder path; step2_interp_ratio - for all demon (input_interp_trigger, step1_interp_trigger)",
+    "input_dir":"D:/Project_multiStepDL/Test_3DRCAN/input/",
+    "input_interp_trigger":false,
+    "input_interp_dir":"D:/Project_multiStepDL/Test_3DRCAN/output/",
+    "input_interp_bit":  16,
+
+    "step1_trigger": true,
+    "step1_model_dir":"D:/Project_multiStepDL/DL_multiStep_Models/diSPIM_Membrane/Step1_DeAbe_Training/RCAN_Model/",
+    "step1_block_shape":  [64, 256, 256],
+    "step1_output_trigger":  true,
+    "step1_output_dir":"D:/Project_multiStepDL/Test_3DRCAN/output/Step1_DL_DeAbe/",
+    "step1_output_bit":  16,
+    "step1_interp_trigger":true,
+    "step1_interp_dir":"D:/Project_multiStepDL/Test_3DRCAN/output/Step1_DL_DeAbe_interp/",
+
+    "step2_trigger": false,
+    "step2_interp_trigger":  true,
+    "step2_interp_ratio":  [6.154, 1, 1],
+    "step2_model_dir":"D:/Project_multiStepDL/DL_multiStep_Models/diSPIM_Membrane/Step2_Decon_Training/RCAN_Model/",
+    "step2_block_shape":  [128, 256, 256],
+    "step2_output_trigger":  true,
+    "step2_output_dir":"D:/Project_multiStepDL/Test_3DRCAN/output/Step2_DL_Decon/",
+    "step2_output_bit":  16,
+
+    "step3_trigger": false,
+    "step3_interp_trigger":  false,
+    "step3_interp_ratio":  [6.154, 1, 1],
+    "step3_model_dir":"D:/Project_multiStepDL/DL_multiStep_Models/diSPIM_Membrane/Step3_Iso_Training/RCAN_Model/",
+    "step3_block_shape":  [128, 256, 256],
+    "step3_output_trigger":  false,
+    "step3_output_dir":"D:/Project_multiStepDL/Test_3DRCAN/output/Step3_DL_Iso/",
+    "step3_output_bit":  16
+}

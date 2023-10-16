@@ -1,0 +1,16 @@
+{
+    "COMMENTS": "no / or \\ at the end of each directory",
+    "training_trigger": true,
+    "training_input_dir": "/path/to/training/input",
+    "training_input_subfolder": "name of folder",
+    "blur_psf": "path and file name of blurring psf",
+    "training_upsample": 6.2,
+    "model_dir": "/path/to/model/output OR input",
+    "model_name": "name of the model ",
+    "history_trigger": true,
+    "prediction_trigger": false,
+    "prediction_input_dir": "/path/to/prediction/input",
+    "prediction_output_dir": "/path/to/prediction/output",
+    "prediction_upsample": 1,
+    "prediction_output_bit": 16
+}

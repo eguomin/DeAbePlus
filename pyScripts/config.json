@@ -1,0 +1,16 @@
+{
+    "epochs": 300,
+    "steps_per_epoch": 256,
+    "num_residual_groups": 3,
+    "training_data_dir": {"raw":"/path/to/training/Raw/",
+                          "gt":"/path/to/training/GT/"},
+    "training_image_pairs": [
+        {"raw": "/path/to/additional/Raw/image01.tif",
+         "gt": "/path/to/additional/GT/image01.tif"},
+        {"raw": "/path/to/additional/Raw/image02.tif",
+         "gt": "/path/to/additional/GT/image02.tif"}
+    ],
+    "validation_data_dir": {"raw":"/path/to/validation/Raw/",
+                            "gt":"/path/to/validation/GT/"},
+    "output_dir": "/path/to/training/output/"
+}
