@@ -4,7 +4,7 @@
 
 DeAbePlus includes a series of computational techniques of deaberration and resolution enhancement for fluorescence microscopy based on deep learning. It is a companion code to our paper: XXXXX
  
-![Example](.\General\DeAbe.jpg)
+![Example](./General/DeAbe.jpg)
 
 ## System Requirements
 
