@@ -1,0 +1,12 @@
+{
+    "epochs": 200,
+    "steps_per_epoch": 400,
+    "num_residual_blocks": 5,
+    "num_residual_groups": 5,
+    "input_shape":  [24, 128, 128],
+    "training_data_dir": {"raw":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Aberrated_Crop/",
+                          "gt":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/GT_Crop/"},
+    "validation_data_dir": {"raw":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Validation/Aberrated_Crop/",
+                            "gt":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Validation/GT_Crop/"}
+
+}

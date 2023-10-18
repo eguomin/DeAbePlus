@@ -1,0 +1,12 @@
+{
+    "epochs": 200,
+    "steps_per_epoch": 400,
+    "num_residual_blocks": 5,
+    "num_residual_groups": 5,
+    "input_shape":  [64, 64, 64],
+    "training_data_dir": {"raw":"D:/AO_Project/DeepLearning/PanMembrane_diSPIM/Training_Decon/Raw_DeAbe/",
+                          "gt":"D:/AO_Project/DeepLearning/PanMembrane_diSPIM/Training_Decon/GT_Decon/"},
+    "validation_data_dir": {"raw":"D:/AO_Project/DeepLearning/PanMembrane_diSPIM/Training_Decon/Validation/Raw_DeAbe/",
+                            "gt":"D:/AO_Project/DeepLearning/PanMembrane_diSPIM/Training_Decon/Validation/GT_Decon/"}
+
+}

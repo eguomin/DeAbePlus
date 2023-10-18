@@ -4,7 +4,7 @@
 
 DeAbePlus includes a series of computational techniques of deaberration and resolution enhancement for fluorescence microscopy based on deep learning. It is a companion code to our paper: XXXXX
  
-![Example](DeAbe.jpg)
+![Example](.\General\DeAbe.jpg)
 
 ## System Requirements
 
@@ -28,6 +28,11 @@ DeAbePlus includes a series of computational techniques of deaberration and reso
     - GPU: NVIDIA GeForce RTX 3090 with 24 GB memory; 
 - Python 3.7.0 
 - MATLAB R2022b.
+
+### Installation
+
+Install from Github:
+`git clone https://github.com/neurodata/mgcpy`
 
 ### Dataset
  
