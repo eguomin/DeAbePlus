@@ -32,7 +32,7 @@ DeAbePlus includes a series of computational techniques of deaberration and reso
 ### Installation
 
 Install from Github:
-`git clone https://github.com/neurodata/mgcpy`
+`git clone https://github.com/eguomin/DeAbePlus`
 
 ### Dataset
  
