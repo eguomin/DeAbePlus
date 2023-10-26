@@ -62,7 +62,7 @@ Install from Github:
         
     Step 2: train the **DL Decon** model. 
         
-     1) Joint deconvolve the multiview images (after applying DeAbe model) using `diSPIMFusion` code to get goundtruth for the Decon model training.
+     1) Jointly deconvolve the multiview images (after applying DeAbe model) using `diSPIMFusion` code to get goundtruth for the Decon model training.
 
      2) Using de-aberrated images (after applying DeAbe model) and groundtruth images (after joint deconvolution) as training data pairs, train the Decon model by code `cmd_train_Decon.bat` within 3D-RCAN.
 
