@@ -1,1 +1,1 @@
-python CARE_iso.py -c config_CARE_example.json
+python CARE_iso.py -c D:\diSPIM_Membrane\Test_Data\config_CARE.json

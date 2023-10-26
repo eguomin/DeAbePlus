@@ -70,11 +70,11 @@ Install from Github:
     
     - **DL Iso** model
 
-        Run the code `cmd_CARE_iso.bat` with the parameter "training_trigger" as *true* and "prediction_trigger" as *false*.
+        Run the code `cmd_CARE_Iso.bat` with the parameter "training_trigger" as *true* and "prediction_trigger" as *false*.
 
     - **DL Expan** model
 
-        1) Generate expansion training data pairs with code `expanded_embryo_sythetic.m` as described in paper [[1]](#3). 
+        1) Generate expansion training data pairs with code `expanded_embryo_sythetic.m` as described in paper [[1]](#1). 
         
         2) Run the code `cmd_train_Exapn.bat` within 3D-RCAN.
 
@@ -86,7 +86,7 @@ Install from Github:
     
     1) Run the code `cmd_apply_multi_steps.bat` with Parameters "step1_trigger" and "step2_trigger" as *true*, and "step3_trigger" as *false*.
 
-    2) Run the code `cmd_CARE_iso.bat` with the parameter "training_trigger" as *false* and "prediction_trigger" as *true*.
+    2) Run the code `cmd_CARE_Iso.bat` with the parameter "training_trigger" as *false* and "prediction_trigger" as *true*.
 
     - If Step 3 is **DL Expan** model:
     

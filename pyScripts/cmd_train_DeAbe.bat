@@ -1,1 +1,1 @@
-python D:\Program\GitHub\3D-RCAN\train.py -c D:\Project_multiStepDL\diSPIM_Membrane\ToShare\Step1_DeAbe_Training\config_DeAbe.json -o D:\Project_multiStepDL\diSPIM_Membrane\ToShare\Step1_DeAbe_Training\Rcan_model_newPC
+python D:\Program\GitHub\3D-RCAN\train.py -c D:\diSPIM_Membrane\Test_Data\config_DeAbe.json -o D:\diSPIM_Membrane\Step1_DL_DeAbe\RCAN_model

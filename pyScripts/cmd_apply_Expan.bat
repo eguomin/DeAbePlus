@@ -1,2 +1,1 @@
-python F:\Program\GitHub\3D-RCAN\apply.py -m I:\AO_Project\DeepLearning\PanMembrane\Training_Decon\TrainingOutput_Decon -i I:\AO_Project\DeepLearning\PanMembrane\DL_results\Pos4\Decon\RegA -o I:\AO_Project\DeepLearning\PanMembrane\DL_results\Pos4\DL_Decon -b 16 -B 256,256,256
-python F:\Program\GitHub\3D-RCAN\apply.py -m I:\AO_Project\DeepLearning\PanMembrane\Training_Decon\TrainingOutput_Decon -i I:\AO_Project\DeepLearning\PanMembrane\DL_results\Pos5\Decon\RegA -o I:\AO_Project\DeepLearning\PanMembrane\DL_results\Pos5\DL_Decon -b 16 -B 256,256,256
+python D:\Program\GitHub\3D-RCAN\apply.py -m D:\diSPIM_Neurite\Step3_DL_Expan\RCAN_model  -i D:\diSPIM_Neurite\Result_Step2_DL_Decon -o D:\diSPIM_Neurite\Result_Step3_DL_Expan -b 16 -B 256,256,256

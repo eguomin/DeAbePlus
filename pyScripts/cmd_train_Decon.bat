@@ -1,1 +1,1 @@
-python D:\Program\GitHub\3D-RCAN\train.py -c D:\AO_Project\DeepLearning\PanMembrane_diSPIM\Training_Decon\config_Decon.json -o D:\AO_Project\DeepLearning\PanMembrane_diSPIM\Training_Decon\TrainingOutput_Decon
+python D:\Program\GitHub\3D-RCAN\train.py -c D:\diSPIM_Membrane\Test_Data\config_Decon.json -o D:\diSPIM_Membrane\Step2_DL_Decon\RCAN_model

@@ -1,1 +1,1 @@
-python D:\Program\GitHub\3D-RCAN\apply_multi_steps.py -c D:\Program\GitHub\3D-RCAN\config_ApplyMultiSteps.json
+python D:\Program\GitHub\3D-RCAN\apply_multi_steps.py -c D:\diSPIM_Membrane\Test_Data\config_ApplyMultiSteps.json

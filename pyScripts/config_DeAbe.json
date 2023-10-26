@@ -4,9 +4,9 @@
     "num_residual_blocks": 5,
     "num_residual_groups": 5,
     "input_shape":  [24, 128, 128],
-    "training_data_dir": {"raw":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Aberrated_Crop/",
-                          "gt":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/GT_Crop/"},
-    "validation_data_dir": {"raw":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Validation/Aberrated_Crop/",
-                            "gt":"D:/Project_multiStepDL/diSPIM_Membrane/ToShare/Step1_DeAbe_Training/Validation/GT_Crop/"}
+    "training_data_dir": {"raw":"D:/diSPIM_Membrane/Step1_DL_DeAbe/DeAbe_Training_Data/Aberrated_Crop/",
+                          "gt":"D:/diSPIM_Membrane/Step1_DL_DeAbe/DeAbe_Training_Data/GT_Crop/"},
+    "validation_data_dir": {"raw":"D:/diSPIM_Membrane/Step1_DL_DeAbe/DeAbe_Training_Data/Validation/Aberrated_Crop/",
+                            "gt":"D:/diSPIM_Membrane/Step1_DL_DeAbe/DeAbe_Training_Data/Validation/GT_Crop/"}
 
 }

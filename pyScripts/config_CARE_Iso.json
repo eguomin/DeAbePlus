@@ -1,0 +1,17 @@
+
+{
+    "COMMENTS": "no / or \\ at the end of each directory",
+    "training_trigger": false,
+    "training_input_dir": "D:/diSPIM_Membrane/Step2_DL_Decon/Decon_Training_Data",
+    "training_input_subfolder": "GT_Decon",
+    "blur_psf": "D:/diSPIM_Membrane/Step3_DL_Iso/BlurKernelbeadsX_sigma2p5.tif",
+    "training_upsample": 6.2,
+    "model_dir": "D:/diSPIM_Membrane/Step3_DL_Iso/CARE_Model",
+    "model_name": "IsoZsigma2p5_usNormal",
+    "history_trigger": false,
+    "prediction_trigger": true,
+    "prediction_input_dir": "D:/diSPIM_Membrane/Result_Step2_DL_Decon",
+    "prediction_output_dir": "D:/diSPIM_Membrane/Result_Step3_DL_CARE_Iso",
+    "prediction_upsample": 1,
+    "prediction_output_bit": 16
+}
