@@ -7,8 +7,9 @@ pathIn = getDirectory("Select input folder");
 pathOut = getDirectory("Select output folder");
 pathOutMP = pathOut + "MP_ZProj/";
 // *** set input and out put path manually ***
-//pathIn = "I:/AO_data/DeepLearning/highNA_diSPIM/20201224_Embryo_RW10230_fast/Sample2_1p4um/DL_Expan/Post/";
-//pathOut = "I:/AO_data/DeepLearning/highNA_diSPIM/20201224_Embryo_RW10230_fast/Sample2_1p4um/DL_Expan/Post/ZProj/";
+//pathIn = "D:/multiStepDL/Embryo/SPIMA/";
+//pathOut = "D:/multiStepDL/Embryo/SPIMA_crop/";
+//pathOutMP = pathOut + "MP_ZProj/";
 
 fileSuffix = ".tif"; // suffix or extension of file names
 fileList = getFileList(pathIn);
@@ -22,8 +23,15 @@ for (i = 0; i < totalFileNum; i++) {
 	if(endsWith(fileList[i], fileSuffix)){
 		print(fileList[i]);
 		open(pathIn + fileList[i]);
-		// crop
-		run("Duplicate...", "duplicate range=1-70");
+		
+		// crop XY 
+		makeRectangle(356, 19, 320, 448); // Pos2
+		run("Crop");
+		
+		// crop Z
+		sliceStart = 25; // Pos0: 25; Pos1: ;Pos2:
+		sliceEnd = 38; // Pos0: 38; Pos1: ; Pos2:
+		run("Duplicate...", "duplicate range="+ sliceStart + "-" + sliceEnd);
 		saveAs("Tiff", pathOut + fileList[i]);
 		// max projection
 		// run("Z Project...", "projection=[Max Intensity]");

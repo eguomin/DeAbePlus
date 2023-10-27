@@ -1,4 +1,5 @@
 function img = create_rd_mix_objects(imgSize, filterSize, sizeRatio)
+% function to generate random dots, lines, shells, rings, balls
 
 nx = imgSize(1);
 ny = imgSize(2);
