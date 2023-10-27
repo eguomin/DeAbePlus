@@ -36,7 +36,7 @@ Install from Github:
 
 ### Dataset
  
- A dataset for training and test is available at [Zenodo wibesite](https://zenodo.org/record/8424246), along with pre-trained models.
+ A dataset for training and test is available at [Zenodo](https://doi.org/10.5281/zenodo.8424245), along with pre-trained models.
 
 ## How to use
 
