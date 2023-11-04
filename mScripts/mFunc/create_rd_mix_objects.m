@@ -1,5 +1,13 @@
 function img = create_rd_mix_objects(imgSize, filterSize, sizeRatio)
-% function to generate random dots, lines, shells, rings, balls
+% function to generate a 3D image with random dots, lines, shells, rings, balls
+% % output
+% img: a 3D matrix
+% % input
+% imgSize: size of the image, [Sx, Sy, Sz]
+% filterSize: size of Guassian kernel for image blurring. Set filterSize
+%       a value <=0 if not to blur the image
+% sizeRatio: ratio to resize the image. Set sizeRatio = 1 if not to resize
+%       the image.
 
 nx = imgSize(1);
 ny = imgSize(2);
