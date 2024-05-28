@@ -1,1 +1,1 @@
-python D:\Program\GitHub\3D-RCAN\apply.py -m D:\diSPIM_Membrane\Step1_DL_DeAbe\RCAN_model -i D:\diSPIM_Membrane\Test_Data\input\SPIMA -o D:\diSPIM_Membrane\Test_Data\Result_Step1_DL_DeAbe -b 16 -B 64,256,256
+python D:\Program\GitHub\3D-RCAN\apply.py -m D:\diSPIM_Membrane\Step1_DL_DeAbe\RCAN_model -i D:\diSPIM_Membrane\Test_Data\input\SPIMA -o D:\diSPIM_Membrane\Test_Data\Result_Step1_DL_DeAbe -b 16 -B 256,256,256

@@ -1,0 +1,11 @@
+{
+    "epochs": 200,
+    "steps_per_epoch": 400,
+    "num_residual_blocks": 5,
+    "num_residual_groups": 5,
+    "input_shape":  [64, 64, 64],
+    "training_data_dir": {"raw":"D:/SynObj/DataForTraining/Aberrated/",
+                          "gt":"D:/SynObj/DataForTraining/GT/"},
+    "validation_data_dir": {"raw":"D:/SynObj/DataForTraining/Validation/Aberrated/",
+                            "gt":"D:/SynObj/DataForTraining/Validation/GT/"}
+}
