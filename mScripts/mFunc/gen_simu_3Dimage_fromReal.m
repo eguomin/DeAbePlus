@@ -21,21 +21,24 @@ function [img3D, PSF, PSF0] = gen_simu_3Dimage_fromReal(img0, p, coeffs, pixelSi
 %       1)'none': noise free
 %       2)'gaussian': Gaussian noise
 %       3)'poisson': Poisson noise
-%   psfChoice: PSF type, 0: wide-field PSF; 1: light-sheet PSF; 2: two-photon
-%   PSF (normalized); 3: confocal PSF
+%   psfChoice: PSF type, 0: wide-field PSF; 1: light-sheet PSF;
+
 %   LsFWHMz: light-sheet thickness, unit: um
 
 % By: Min Guo
 % Sep. 28, 2020
 [Sx0, Sy0, Sz0] = size(img0);
+% binSize = 1; % default:1
+binSize = 16; % upsample PSF for calculation when raw pixel size is too large
 
-% psfChoice = 1;
-% LsFWHMz = 2.5; % light-sheet thickness, unit: um
-% pixelSizez = 1;
+
+% pad image when doing FFT
+% flagPad = 0;
 flagPad = 1;
-padx = 0;
-pady = 0;
-padz = 128;
+
+padx = 16;
+pady = 16;
+padz = 16; 
 
 if(flagPad==1)
     Sx = Sx0 + padx;
@@ -50,31 +53,30 @@ else
 end
 
 % genearate PSFs
-PSFx = 128;
+PSFx = 64; % 128
 % PSFy = FPSFx;
-PSFz = 128;
+PSFz = 64; % 128
 coeffs0 = zeros(size(coeffs));
-PSF0 = coeffs2PSF(p,coeffs0, PSFx, pixelSize, lambda, NA, PSFz,zStepSize, RI);
+PSF0 = coeffs2PSF(p,coeffs0, PSFx*binSize, pixelSize/binSize, lambda, NA, PSFz,zStepSize, RI);
 if(psfChoice==1)
     PSF0 = genPSF_wf2ls(PSF0, LsFWHMz, zStepSize);
 end
-if(psfChoice==2)
-    PSF0 = PSF0.^2;
+PSF3D_new = zeros(PSFx,PSFx,PSFz);
+for i=1:PSFz
+    PSF3D_new(:,:,i) = imbin(PSF0(:,:,i), binSize);
 end
-if(psfChoice==3) % To incorporate
-    print('Confocal PSF has not been incorporated to this code.')
-end
+PSF0 = PSF3D_new;
 OTF0 = genOTF_MATLAB(PSF0, [Sx, Sy, Sz]);
-PSF = coeffs2PSF(p,coeffs, PSFx, pixelSize, lambda, NA, PSFz,zStepSize, RI);
+
+PSF = coeffs2PSF(p,coeffs, PSFx*binSize, pixelSize/binSize, lambda, NA, PSFz,zStepSize, RI);
 if(psfChoice==1)
     PSF = genPSF_wf2ls(PSF, LsFWHMz, zStepSize);
 end
-if(psfChoice==2)
-    PSF = PSF.^2;
+PSF3D_new = zeros(PSFx,PSFx,PSFz);
+for i=1:PSFz
+    PSF3D_new(:,:,i) = imbin(PSF(:,:,i), binSize);
 end
-if(psfChoice==3) % To incorporate
-    print('Confocal PSF has not been incorporated to this code.')
-end
+PSF = PSF3D_new;
 OTF = genOTF_MATLAB(PSF, [Sx, Sy, Sz]);
 
 % blur image
@@ -124,4 +126,3 @@ end
 PSF = PSF/sum(PSF(:));
 OTF = fftn(ifftshift(PSF));
 end
-

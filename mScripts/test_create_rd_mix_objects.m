@@ -8,7 +8,7 @@ clear all;
 % close all;
 tStart = tic;
 addpath(genpath('.\mFunc\'));
-fileFolderOut = 'D:\multiStepDL\SynObj\Obj\';
+fileFolderOut = 'D:\SynObj\Obj\';
 fileNameBase = 'img_';
 imgNumStart = 0;
 imgNumEnd = 49;
